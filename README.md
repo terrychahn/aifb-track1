@@ -1,7 +1,7 @@
 # **Gemini Embedding 2 및 Vector Search 2.0을 이용한 멀티모달 미디어 검색**
-이 프로젝트는 최신 **Google GenAI SDK (`google-genai`)**와 **Vertex AI Vector Search 2.0 (Serverless Collections)**을 활용하여 텍스트, 이미지, 오디오 및 장편 동영상이 어우러진 진정한 엔터프라이즈급 크로스 모달(Cross-Modal) 하이브리드 검색 시스템을 구축하는 실습 과정입니다. 
+이 프로젝트는 **Gemini Embedding 2** 모델과 **Vertex AI Vector Search 2.0**을 활용하여 텍스트, 이미지, 오디오 및 장편 동영상이 어우러진 진정한 엔터프라이즈급 크로스 모달 하이브리드 검색 시스템을 구축하는 실습 과정입니다. 
 
-GCP Workbench 환경에서 바로 동작 가능한 노트북 형식에 최적화되었습니다.
+GCP Workbench 환경에서 실행할 수 있는 노트북 형식에 최적화되었습니다.
 
 ---
 
@@ -14,13 +14,13 @@ GCP Workbench 환경에서 바로 동작 가능한 노트북 형식에 최적화
 총 7단계의 실습 모듈을 통해 기초 전처리부터 최첨단 검색 최적화 기술까지 단계별로 고도화합니다.
 
 ### **1단계: 환경 설정 및 인증**
-최신 `google-genai` 클라이언트를 구성하고 Gemini API 키 검증 단계를 거칩니다. 실습자별 고유 GCS 출력 버킷을 생성합니다.
+`google-genai` 클라이언트를 구성하고 Gemini API 키 검증 단계를 거칩니다. 실습자별 고유 GCS 출력 버킷을 생성합니다.
 
 ### **2단계: 비디오 전처리 및 고속 청킹**
 **FFmpeg Segment Copy (`-c copy`)** 방식으로 오디오를 10초 세그먼트로 자동 분할 후 GCS에 업로드합니다. (노트북 1단계)
 
 ### **3단계: 로컬 하이브리드 검색 및 t-SNE 분석**
-로컬 인메모리 **SimpleBM25** 모델을 구축해 하이브리드 검색 시뮬레이터를 우선 가동합니다. `gemini-embedding-2` 밀집 벡터와 `gemini-3.5-flash`가 생성한 청크 묘사 텍스트를 연동하여 가중치 제어 실험을 진행하고, 시간 축에 따른 비디오 흐름 궤적(t-SNE Trajectory)을 동적 화살표 차트로 시각화합니다. (노트북 2단계)
+로컬 인메모리 **SimpleBM25** 모델을 구축해 하이브리드 검색 시뮬레이터를 사용합니다. `gemini-embedding-2` 밀집 벡터와 `gemini-3.5-flash`가 생성한 청크 묘사 텍스트를 연동하여 가중치 제어 실험을 진행하고, 시간 축에 따른 비디오 흐름 궤적(t-SNE Trajectory)을 동적 화살표 차트로 시각화합니다. (노트북 2단계)
 
 ### **4단계: 검색 결과 최적화 단계**
 시맨틱 검색 결과의 비즈니스 현실성을 극대화하기 위해 두 가지 상용 최적화 기법을 도입합니다: (노트북 3단계)
@@ -63,7 +63,7 @@ GCP Workbench 환경에서 바로 동작 가능한 노트북 형식에 최적화
 <br><br>
 
 # **Cross-Modal Search Engine with Gemini Embedding 2 & Vector Search 2.0**
-This project demonstrates how to build an enterprise-grade cross-modal hybrid retrieval system using the modern **Google GenAI SDK (`google-genai`)** and **Vertex AI Vector Search 2.0 (Serverless Collections)**. It handles mixed-modality queries across text, images, audio, and long-form videos.
+This project demonstrates how to build an enterprise-grade cross-modal hybrid retrieval system using the **Gemini Embedding 2** model and **Vertex AI Vector Search 2.0 (Serverless Collections)**. It handles mixed-modality queries across text, images, audio, and long-form videos.
 
 Optimized as a highly reusable hands-on lab asset designed for **GCP Workbench** and similar cloud notebook environments.
 
