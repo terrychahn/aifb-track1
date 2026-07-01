@@ -70,7 +70,7 @@ Optimized as a highly reusable hands-on lab asset designed for **GCP Workbench**
 ---
 
 ## **Active Files**
-*   **Active Notebook**: [multimodal_search_v2.ipynb](multimodal_search_v2.ipynb)
+*   **Active Notebook**: [multimodal_search.ipynb](multimodal_search.ipynb)
 
 ---
 
