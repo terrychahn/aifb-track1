@@ -45,11 +45,11 @@ git clone https://github.com/cheeunlim/aifb-track1
 <br>
 
 ## 세션1: 오후 1시 30분 - 오후 3시 30분
-### [`Gemini Embedding 2 & Vector Search 2 기반 크로스 모달(Cross-Modal) 검색 엔진 개발`](https://github.com/cheeunlim/aifb-track1/session1)
+### [`Gemini Embedding 2 & Vector Search 2 기반 크로스 모달(Cross-Modal) 검색 엔진 개발`](https://github.com/cheeunlim/aifb-track1/tree/main/session1)
 
 <br>
 
 ## 세션2: 오후 3시 30분 - 오후 5시 00분
-### [`Gemini Live API와 크로스 모달(Cross-Modal) 검색 엔진을 결합한 실시간 대화형 멀티모달 쇼핑 에이전트 개발`](https://github.com/cheeunlim/aifb-track1/session2)
+### [`Gemini Live API와 크로스 모달(Cross-Modal) 검색 엔진을 결합한 실시간 대화형 멀티모달 쇼핑 에이전트 개발`](https://github.com/cheeunlim/aifb-track1/tree/main/session2)
 
 <br>
