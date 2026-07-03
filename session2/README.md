@@ -44,7 +44,7 @@ gcloud vector-search operations list --location=asia-northeast1
 
 #### 3. 아래의 명령어를 이용해 Agent 를 Cloud Run 에 배포합니다. -----GEMINI_API_KEY----- 부분을 기록해둔 Key로 교체합니다. (Y/n) 선택이 나오면 엔터를 입력 합니다.
 ```
-cd session2
+cd ~/aifb-track1/session2
 gcloud run deploy lens-mosaic --source . --region "asia-northeast1" --set-env-vars GEMINI_API_KEY="-----GEMINI_API_KEY-----" --concurrency 500 --cpu 2 --memory 4Gi --timeout 3600 --min-instances 1 --max-instances 1 --execution-environment=gen2
 ```
 
