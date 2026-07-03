@@ -1,5 +1,5 @@
 # Gemini Live, Gemini Embedding 2 및 Vector Search 2.0 를 이용한 쇼핑 에이전트
--   https://github.com/cheeunlim/aifb-track1/session2
+-   https://github.com/cheeunlim/aifb-track1/tree/main/session2
 
 본 예제는 ['LensMosaic'](https://github.com/kazunori279/lens-mosaic/tree/main)를 기반으로 합니다.
 
@@ -44,16 +44,27 @@ gcloud vector-search operations list --location=asia-southeast1
 
 #### 3. 아래의 명령어를 이용해 Agent 를 Cloud Run 에 배포합니다. -----GEMINI_API_KEY----- 부분을 기록해둔 Key로 교체합니다. (Y/n) 선택이 나오면 엔터를 입력 합니다.
 ```
-cd multimodal-agent
+cd session2
 gcloud run deploy lens-mosaic --source . --region "asia-southeast1" --set-env-vars GEMINI_API_KEY="-----GEMINI_API_KEY-----" --concurrency 500 --cpu 2 --memory 4Gi --timeout 3600 --min-instances 1 --max-instances 1 --execution-environment=gen2
 ```
 
 #### 4. Cloud Run 이 배포되면 메뉴에서 cloud run 검색, lens-mosaic 클릭 후 Security 탭에서 Authentication -> Allow public access 를 클릭 후 Save를 클릭합니다.
 
 ![image](https://raw.githubusercontent.com/jk1333/handson/main/images/7/3.png)
+
+<br>
+
 ![image](https://raw.githubusercontent.com/jk1333/handson/main/images/7/4.png)
+
+<br>
+
 ![image](https://raw.githubusercontent.com/jk1333/handson/main/images/7/5.png)
+
+<br>
+
 ![image](https://raw.githubusercontent.com/jk1333/handson/main/images/7/6.png)
+
+<br>
 
 ## 실습 Part 3
 #### 8. 열려있는 Cloud Run 의 lens-mosaic 서비스에서 URL 의 주소값을 복사합니다. (URL 끝에 복사 버튼을 누르면 됩니다.) 복사 후 아래의 명령어에 -------CLOUD RUN URL------- 을 교체 후 실행합니다.
