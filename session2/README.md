@@ -37,7 +37,7 @@ multimodal-agent/
 
 아래 명령어를 Terminal 에서 실행하면 Long running job 의 상태를 확인할 수 있습니다.
 ```
-gcloud vector-search operations list --location=asia-southeast1
+gcloud vector-search operations list --location=asia-northeast1
 ```
 
 ## 실습 Part 2: Application 배포 (약 5분 소요)
@@ -45,7 +45,7 @@ gcloud vector-search operations list --location=asia-southeast1
 #### 3. 아래의 명령어를 이용해 Agent 를 Cloud Run 에 배포합니다. -----GEMINI_API_KEY----- 부분을 기록해둔 Key로 교체합니다. (Y/n) 선택이 나오면 엔터를 입력 합니다.
 ```
 cd session2
-gcloud run deploy lens-mosaic --source . --region "asia-southeast1" --set-env-vars GEMINI_API_KEY="-----GEMINI_API_KEY-----" --concurrency 500 --cpu 2 --memory 4Gi --timeout 3600 --min-instances 1 --max-instances 1 --execution-environment=gen2
+gcloud run deploy lens-mosaic --source . --region "asia-northeast1" --set-env-vars GEMINI_API_KEY="-----GEMINI_API_KEY-----" --concurrency 500 --cpu 2 --memory 4Gi --timeout 3600 --min-instances 1 --max-instances 1 --execution-environment=gen2
 ```
 
 #### 4. Cloud Run 이 배포되면 메뉴에서 cloud run 검색, lens-mosaic 클릭 후 Security 탭에서 Authentication -> Allow public access 를 클릭 후 Save를 클릭합니다.
