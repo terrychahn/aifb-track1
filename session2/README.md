@@ -62,7 +62,8 @@ gcloud run deploy lens-mosaic --source . --region "asia-northeast1" --set-env-va
 
 <br>
 
-## 실습 Part 3
+## 실습 Part 3: QR 코드 생성 및 모바일에서 이용 테스트
+
 #### 8. 열려있는 Cloud Run 의 lens-mosaic 서비스에서 URL 의 주소값을 복사합니다. (URL 끝에 복사 버튼을 누르면 됩니다.) 복사 후 아래의 명령어에 -------CLOUD RUN URL------- 을 교체 후 실행합니다.
 ```
 pip install qrcode
@@ -71,7 +72,7 @@ python qr.py -------CLOUD RUN URL-------
 
 #### 9. 생성된 my_qrcode.png 파일을 연 후 모바일의 카메라로 인식하여 Agent를 실행합니다.
 
-## 실습 Part 4
+## 실습 Part 4: Agent Registry 등록 및 검색 테스트
 
 #### 10. A2A 를 위한 Agent Card를 생성합니다.
 ```
