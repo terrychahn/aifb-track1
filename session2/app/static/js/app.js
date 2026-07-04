@@ -13,7 +13,7 @@ const videoEl = document.getElementById("camera");
 const canvasEl = document.getElementById("canvas");
 const AGENT_VISION_SEND_MS = 1000;
 const CAMERA_FRAME_WIDTH = 320;
-const RECOMMEND_TILE_POPUP_DURATION = 15000;
+const RECOMMEND_TILE_POPUP_DURATION = 10000;
 
 const imageServer = "https://thumbnail.aidemo.dev"
 //const imageServer = "https://storage.googleapis.com/jk-amazon-products-thumbnail"
