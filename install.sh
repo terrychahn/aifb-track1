@@ -24,7 +24,7 @@ echo "1. Installing and upgrading required Python packages..."
 pip install --quiet --upgrade google-cloud-vectorsearch fsspec gcsfs google-auth google-api-core
 
 echo "2. Creating GCS bucket (Location: asia-northeast1)..."
-gcloud storage buckets create gs://${PROJECT_ID}-vs2 --location=asia-northeast1
+gcloud storage buckets create gs://${PROJECT_ID}-vs2 --location=asia-northeast1 || true
 
 echo "3. Copying dataset to the created GCS bucket..."
 gcloud storage cp gs://jk-amazon-products-index/compact-records/amazon-product-dataset-768-compact.jsonl gs://${PROJECT_ID}-vs2/data/
