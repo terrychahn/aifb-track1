@@ -30,6 +30,6 @@ echo "3. Copying dataset to the created GCS bucket..."
 gcloud storage cp gs://jk-amazon-products-index/compact-records/amazon-product-dataset-768-compact.jsonl gs://${PROJECT_ID}-vs2/data/
 
 echo "4. Running the index builder script..."
-nohup python3 index_builder.py &
+nohup python3 session2_index_builder.py &
 
 echo "All tasks completed successfully!"
