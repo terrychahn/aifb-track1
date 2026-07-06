@@ -182,7 +182,7 @@ function cleanCJKSpaces(text) {
 
 const activeTypewriters = new Map();
 
-function runTypewriter(element, targetText, speedMs = 35) {
+function runTypewriter(element, targetText, speedMs = 5) {
   // Clear any existing typewriter for this element
   if (activeTypewriters.has(element)) {
     clearInterval(activeTypewriters.get(element));
