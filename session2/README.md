@@ -72,7 +72,34 @@ python qr.py -------CLOUD RUN URL-------
 
 #### 9. 생성된 my_qrcode.png 파일을 연 후 모바일의 카메라로 인식하여 Agent를 실행합니다.
 
-## 실습 Part 4: Agent Registry 등록 및 검색 테스트
+#### 10. 클라우드 콘솔에서 'studio' 를 검색하면 나오는 Agent Platform Studio 를 클릭합니다.
+
+![image](https://raw.githubusercontent.com/jk1333/handson/main/images/7/7.png)
+
+#### 11. 좌측 상단의 '+' 버튼을 클릭하면 나오는 메뉴에서 Image 를 클릭합니다.
+
+![image](https://raw.githubusercontent.com/jk1333/handson/main/images/7/8.png)
+
+#### 12. 프롬프트에 아래의 예시를 입력하여 이미지를 생성합니다.
+```
+흰색 꽃무늬 원피스를 입은 여성 마네킨
+```
+
+![image](https://raw.githubusercontent.com/jk1333/handson/main/images/7/9.png)
+
+#### 13. 생성된 이미지를 클릭하면 크게 확대 가능하며 아래쪽 다운로드 버튼을 클릭해 저장 후 크게 확인합니다.
+
+#### 14. Agent에서 우측 하단의 마이크 버튼을 눌러 음성 입력을 활성화 한 후 모바일 카메라로 이미지를 인식하는 상태에서 아래와 같이 음성 명령 후 결과를 살펴봅니다.
+```
+어울리는 가방을 추천해줘
+```
+
+#### 15. 좌측과 같이 화면을 비추면 외형적으로 유사한 상품을 자동 검색하며, 요구사항을 입력하면 그에 맞춰 상품을 추천해 줍니다.
+
+![image](https://raw.githubusercontent.com/jk1333/handson/main/images/7/10.png)
+
+
+## (Optional) 실습 Part 4: Agent Registry 등록 및 검색 테스트
 
 #### 10. A2A 를 위한 Agent Card를 생성합니다.
 ```
