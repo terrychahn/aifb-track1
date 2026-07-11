@@ -66,7 +66,6 @@ gcloud run deploy lens-mosaic --source . --region "asia-northeast1" --set-env-va
 
 #### 8. 열려있는 Cloud Run 의 lens-mosaic 서비스에서 URL 의 주소값을 복사합니다. (URL 끝에 복사 버튼을 누르면 됩니다.) 복사 후 아래의 명령어에 -------CLOUD RUN URL------- 을 교체 후 실행합니다.
 ```
-pip install qrcode
 python qr.py -------CLOUD RUN URL-------
 ```
 

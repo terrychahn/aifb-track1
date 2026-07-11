@@ -21,7 +21,7 @@ fi
 echo "Using Project ID: ${PROJECT_ID}"
 
 echo "1. Installing and upgrading required Python packages..."
-pip install --quiet --upgrade google-cloud-vectorsearch fsspec pandas gcsfs google-auth google-api-core google-genai google-cloud-aiplatform google-cloud-discoveryengine Pillow opencv-python numpy scikit-learn seaborn ipywidgets pyOpenSSL
+pip install --quiet --upgrade google-cloud-vectorsearch fsspec pandas gcsfs google-auth google-api-core google-genai google-cloud-aiplatform google-cloud-discoveryengine Pillow opencv-python numpy scikit-learn seaborn ipywidgets pyOpenSSL qrcode
 
 echo "2. Creating GCS bucket (Location: asia-northeast1)..."
 gcloud storage buckets create gs://${PROJECT_ID}-vs2 --location=asia-northeast1 || true
