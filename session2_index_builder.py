@@ -40,8 +40,10 @@ request = vectorsearch_v1.CreateCollectionRequest(
 operation = vector_search_service_client.create_collection(request=request)
 
 # Wait for the result (note this may take up to several minutes)
+while operation.done() == False:
+    time.sleep(1)
+print(f"Collection created at {datetime.now()}")
 time.sleep(30)
-operation.result()
 
 # Initialize request
 request = vectorsearch_v1.ImportDataObjectsRequest(
@@ -56,10 +58,9 @@ request = vectorsearch_v1.ImportDataObjectsRequest(
 print(datetime.now()) 
 operation = vector_search_service_client.import_data_objects(request=request)
 
-time.sleep(30)
 while operation.done() == False:
     time.sleep(1)
-print(f"Collection created at {datetime.now()}")
+print(f"Import data finished at {datetime.now()}")
 time.sleep(30)
 
 def create_index(client, index_field: str):
@@ -79,14 +80,12 @@ def create_index(client, index_field: str):
     return client.create_index(request=request)
 
 operation = create_index(vector_search_service_client, "text_embedding")
-time.sleep(30)
 while operation.done() == False:
     time.sleep(1)
 print(f"Text embedding index created at {datetime.now()}")
 time.sleep(30)
 
 operation = create_index(vector_search_service_client, "image_embedding")
-time.sleep(30)
 while operation.done() == False:
     time.sleep(1)
 print(f"Image embedding index created at {datetime.now()}")
